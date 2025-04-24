@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "stoxa-backend"
+version = "0.1.0"
+description = "Backend API for drug test management system"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.0"
+uvicorn = "^0.23.2"
+motor = "^3.3.1"
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pydantic = {extras = ["email"], version = "^2.4.2"}
+pydantic-settings = "^2.0.3"
+XlsxWriter = "^3.1.2"
+python-magic = "^0.4.27"  # For Linux/macOS
+python-magic-bin = "^0.4.14"  # For Windows
+pytesseract = "^0.3.10"
+pdf2image = "^1.16.3"
+aiofiles = "^23.2.1"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+black = "^23.10.1"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
